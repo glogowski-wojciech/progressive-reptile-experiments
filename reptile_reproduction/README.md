@@ -10,6 +10,8 @@ classification, then you would show it 25 examples (5 per class) and ask it to c
 
 ~ source: "On First-Order Meta-Learning Algorithms", Nichol et al., https://arxiv.org/abs/1803.02999
  
+# On experiments
+ 
 Experiment reproduces all Reptile results for settings from Table 1 and Table 2 from https://arxiv.org/abs/1803.02999
 All experiments reproducing Omniglot results are tracked with Neptune. All Neptune runs are integrated with git and non-dirty:
 https://app.neptune.ml/deepsense-ai-research/meta-learning-reptile/experiments
