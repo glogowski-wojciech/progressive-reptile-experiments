@@ -1,5 +1,5 @@
 Experiment reproduces all Reptile results for settings from Table 1 and Table 2 from https://arxiv.org/abs/1803.02999
-All experiments reproducing Omniglot results are tracked with Neptune:
+All experiments reproducing Omniglot results are tracked with Neptune. All Neptune runs are integrated with git and non-dirty:
 https://app.neptune.ml/deepsense-ai-research/meta-learning-reptile/experiments
 Experiments are marked with tag `reproduce`. Moreover all experiments are marked with a tag proper tag corresponding to reproduced setting:
 ```python
@@ -19,4 +19,4 @@ Test Accuracy for Setting | o15 | o15t | o55 | o55t | o120 | o120t | o520 | o520
 Publication | 95.39 ± 0.09% | 97.68 ± 0.04% | 98.90 ± 0.10% | 99.48 ± 0.06% | 88.14 ± 0.15% | 89.43 ± 0.14% | 96.65 ± 0.33% | 97.12 ± 0.32% | 47.07 ± 0.26% | 49.97 ± 0.32% | 62.74 ± 0.37% | 65.99 ± 0.58%
 Local without Neptune | 0.95484 | 0.9774 | 0.98898 | 0.9952 | 0.881155 | 0.89296 | 0.965645 | 0.9755 | --- | --- | --- | ---
 Local with Neptune | 0.95556 | 0.9779 | 0.9901 | 0.99534 | --- | --- | --- | --- | --- | --- | --- | ---
-Prometheus with mrunner | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Prometheus with mrunner | 0.95248 | 0.97614 | 0.99148 | 0.99528 | --- | --- | --- | --- | 0.47154 | 0.49234 | 0.6332 | 0.66136
