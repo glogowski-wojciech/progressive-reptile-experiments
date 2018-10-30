@@ -9,6 +9,10 @@ randomly chosen sample from the test set. For example, if you trained a model fo
 classification, then you would show it 25 examples (5 per class) and ask it to classify a 26th example.*
 
 ~ source: "On First-Order Meta-Learning Algorithms", Nichol et al., https://arxiv.org/abs/1803.02999
+
+# Progressive what (net)?
+
+To quickly get it, check network scheme on page 2 from https://arxiv.org/abs/1606.04671
  
 # On experiments
  
@@ -41,7 +45,7 @@ tag ::= [o|m][1|5][5|20][|t]
 - 't' ::= transductive setting (in test use batches of test data, not single test image with rest of batch consisting of train data).
 
 
-Experiments with `mrunner` tag were produced with mrunner on Prometheus. Experiments with `local` tag were produced locally on a PC.
+Experiments with `mrunner` tag were produced with mrunner on Prometheus. Experiments with `local` tag were produced locally on a PC. Experiments with tag `one_column` correspond to one column in progressive nets that should be identical as simply the same net.
 
 `omniglot.py` file contains setting used for producing results for Omniglot dataset.
 `miniimagenet.py` file contains setting used for producing results for Mini-Imagenet dataset.
@@ -56,3 +60,4 @@ Publication | 95.39 ± 0.09% | 97.68 ± 0.04% | 98.90 ± 0.10% | 99.48 ± 0.06% 
 Local without Neptune | 0.95484 | 0.9774 | 0.98898 | 0.9952 | 0.881155 | 0.89296 | 0.965645 | 0.9755 | --- | --- | --- | ---
 Local with Neptune | 0.95556 | 0.9779 | 0.9901 | 0.99534 | 0.87928 | 0.89129 | 0.965305 | 0.970515 | --- | --- | --- | ---
 Prometheus with mrunner | 0.95248 | 0.97614 | 0.99148 | 0.99528 | 0.88004 | 0.891275 | 0.965595 | 0.969905 | 0.47154 | 0.49234 | 0.6332 | 0.66136
+One progressive column| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
