@@ -1,3 +1,20 @@
+# Reptile
+
+tag ::= [o|m][1|5][5|20]
+[o|m]:
+o ::= omniglot
+m ::= miniimagenet
+[1:5]:
+1 ::= 1-shot
+5 ::= 5-shot
+[5|20]:
+5 ::= 5-way
+20 ::= 20-way
+
+For example:
+1-shot 5-way means # TODO
+transductive # TODO
+ 
 Experiment reproduces all Reptile results for settings from Table 1 and Table 2 from https://arxiv.org/abs/1803.02999
 All experiments reproducing Omniglot results are tracked with Neptune. All Neptune runs are integrated with git and non-dirty:
 https://app.neptune.ml/deepsense-ai-research/meta-learning-reptile/experiments
