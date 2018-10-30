@@ -22,7 +22,7 @@ tags = [o15, o15t, o55, o55t, o120, o120t, o520, o520t, m15, m15t, m55, m55t]
 
 # Tags explained
 
-tag ::= [o|m][1|5][5|20]
+tag ::= [o|m][1|5][5|20][|t]
 
 [o|m]:
 - o ::= omniglot
@@ -35,6 +35,10 @@ tag ::= [o|m][1|5][5|20]
 [5|20]:
 - 5 ::= 5-way
 - 20 ::= 20-way
+
+[|t]:
+- '' ::= non-transductive setting
+- 't' ::= transductive setting (in test use batches of test data, not single test image with rest of batch consisting of train data).
 
 
 Experiments with `mrunner` tag were produced with mrunner on Prometheus. Experiments with `local` tag were produced locally on a PC.
