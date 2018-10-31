@@ -1,8 +1,6 @@
 # On experiments
  
-Exclusive tag: `reproduce`
-
-Other tags:
+Tags:
 - `mrunner` (Prometheus with mrunner)
 - `local` (local with Neptune)
 - `one_column` (one progressive column)

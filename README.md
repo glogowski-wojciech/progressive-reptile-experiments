@@ -15,6 +15,10 @@ classification, then you would show it 25 examples (5 per class) and ask it to c
 To quickly get it, check network scheme on page 2 from https://arxiv.org/abs/1606.04671
  
 # Tags explained
+
+Every experiment has exclusive tag which is also name of the directory.
+
+Also each experiment is being tested on multiple meta-learning problems with corresponding tags:
  
 ```python
 tags = [o15, o15t, o55, o55t, o120, o120t, o520, o520t, m15, m15t, m55, m55t]
@@ -26,7 +30,7 @@ tag ::= [o|m][1|5][5|20][|t]
 - o ::= omniglot
 - m ::= miniimagenet
 
-[1:5]:
+[1|5]:
 - 1 ::= 1-shot
 - 5 ::= 5-shot
 
