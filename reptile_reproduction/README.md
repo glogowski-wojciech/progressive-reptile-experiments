@@ -1,58 +1,15 @@
-# Meta learning? 1-shot 5-way? What is it?
-
-*In few-shot classification tasks, we have a meta-dataset D containing many classes C, where each
-class is itself a set of example instances {c1, c2, ..., cn}. If we are doing K-shot, N-way classification,
-then we sample tasks by selecting N classes from C and then selecting K + 1 examples for each
-class. We split these examples into a training set and a test set, where the test set contains a single
-example for each class. The model gets to see the entire training set, and then it must classify a
-randomly chosen sample from the test set. For example, if you trained a model for 5-shot, 5-way
-classification, then you would show it 25 examples (5 per class) and ask it to classify a 26th example.*
-
-~ source: "On First-Order Meta-Learning Algorithms", Nichol et al., https://arxiv.org/abs/1803.02999
-
-# Progressive what (net)?
-
-To quickly get it, check network scheme on page 2 from https://arxiv.org/abs/1606.04671
- 
 # On experiments
  
-Experiment reproduces all Reptile results for settings from Table 1 and Table 2 from https://arxiv.org/abs/1803.02999
-All experiments reproducing Omniglot results are tracked with Neptune. All Neptune runs are integrated with git and non-dirty:
-https://app.neptune.ml/deepsense-ai-research/meta-learning-reptile/experiments
-Experiments are marked with tag `reproduce`. Moreover all experiments are marked with a tag proper tag corresponding to reproduced setting:
-```python
-tags = [o15, o15t, o55, o55t, o120, o120t, o520, o520t, m15, m15t, m55, m55t]
-```
+Exclusive tag: `reproduce`
 
-# Tags explained
+Other tags:
+- `mrunner` (Prometheus with mrunner)
+- `local` (local with Neptune)
+- `one_column` (one progressive column)
 
-tag ::= [o|m][1|5][5|20][|t]
-
-[o|m]:
-- o ::= omniglot
-- m ::= miniimagenet
-
-[1:5]:
-- 1 ::= 1-shot
-- 5 ::= 5-shot
-
-[5|20]:
-- 5 ::= 5-way
-- 20 ::= 20-way
-
-[|t]:
-- '' ::= non-transductive setting
-- 't' ::= transductive setting (in test use batches of test data, not single test image with rest of batch consisting of train data).
-
-
-Experiments with `mrunner` tag were produced with mrunner on Prometheus. Experiments with `local` tag were produced locally on a PC. Experiments with tag `one_column` correspond to one column in progressive nets that should be identical as simply the same net.
-
-`omniglot.py` file contains setting used for producing results for Omniglot dataset.
-`miniimagenet.py` file contains setting used for producing results for Mini-Imagenet dataset.
+Experiment reproduces all Reptile results for settings from Table 1 and Table 2 from https://arxiv.org/abs/1803.02999. All experiments reproducing Omniglot results are tracked with Neptune if not stated otherwise. One progressive column reproduces results with use of `[Omniglot|MiniImageNet]ProgressiveColumn` class.
 
 # Results
-More results will appear here
-
 
 Test Accuracy for Setting | o15 | o15t | o55 | o55t | o120 | o120t | o520 | o520t | m15 | m15t | m55 | m55t
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |--- | ---
