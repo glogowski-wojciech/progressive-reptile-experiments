@@ -5,7 +5,7 @@ Tags:
 - `local` (local with Neptune)
 - `one_column` (one progressive column)
 
-Experiment reproduces all Reptile results for settings from Table 1 and Table 2 from https://arxiv.org/abs/1803.02999. All experiments reproducing Omniglot results are tracked with Neptune if not stated otherwise. One progressive column reproduces results with use of `[Omniglot|MiniImageNet]ProgressiveColumn` class.
+Experiment reproduces all Reptile results for settings from Table 1 and Table 2 from https://arxiv.org/abs/1803.02999. All experiments reproducing Omniglot results are tracked with Neptune if not stated otherwise. One progressive column reproduces results with use of `Progressive[Omniglot|MiniImageNet]Column` class. The goal of the experiment is to ensure that Neptune, mrunner and new models consisting of `Progressive[Omniglot|MiniImageNet]Column` classes don't break anything in argument parsing, dataloading and training.
 
 # Results
 

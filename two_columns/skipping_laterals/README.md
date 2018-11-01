@@ -1,6 +1,6 @@
 # Skipping laterals
 
-In progressive networks n-th layer of m-th column has lateral connections from (n-1)'th layers from all (m-1) columns. In case of our 2-column, 5-layer network it is 4 lateral connections. We check all possible combinations of skipping lateral connections except case of disjointing columns. This experiment might indicate what is the best way of connecting columns with lateral connections.
+In progressive networks n-th layer of m-th column has lateral connections from (n-1)'th layers from all (m-1) columns. In case of our 2-column, 5-layer network it means 4 lateral connections in total. We check all possible combinations of skipping lateral connections except case of disjointing columns. This experiment might indicate what is the best way of connecting columns with lateral connections.
 
 # Encoding
 
