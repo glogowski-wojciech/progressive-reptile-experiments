@@ -10,7 +10,7 @@ classification, then you would show it 25 examples (5 per class) and ask it to c
 
 ~ source: "On First-Order Meta-Learning Algorithms", Nichol et al., https://arxiv.org/abs/1803.02999
 
-# Progressive what (net)?
+# Progressive net
 
 To quickly get it, check network scheme on page 2 from https://arxiv.org/abs/1606.04671
  
