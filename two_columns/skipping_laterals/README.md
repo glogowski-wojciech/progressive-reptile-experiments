@@ -8,7 +8,7 @@ In case of 2-column progressive network:
 
 - `xxxx` stands for all 4 connections.
 - `xoxo` stands for connections from 1st and 3rd layers of first column
-- 'ooox' stands for one connection from 4rd layer of first column
+- `ooox` stands for one connection from 4rd layer of first column
 
 Lateral setting | Test Accuracy in o15, lr=0.001
 --- | ---
