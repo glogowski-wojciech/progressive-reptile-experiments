@@ -1,4 +1,4 @@
-# Meta learning? 1-shot 5-way? What is it?
+# Meta learning, k-shot learning
 
 *In few-shot classification tasks, we have a meta-dataset D containing many classes C, where each
 class is itself a set of example instances {c1, c2, ..., cn}. If we are doing K-shot, N-way classification,
@@ -10,7 +10,7 @@ classification, then you would show it 25 examples (5 per class) and ask it to c
 
 ~ source: "On First-Order Meta-Learning Algorithms", Nichol et al., https://arxiv.org/abs/1803.02999
 
-# Progressive what (net)?
+# Progressive net
 
 To quickly get it, check network scheme on page 2 from https://arxiv.org/abs/1606.04671
  
