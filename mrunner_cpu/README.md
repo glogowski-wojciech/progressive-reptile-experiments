@@ -27,4 +27,4 @@ TensorFlow 1.11 with MKL-DNN, c=24  | ERR* | ERR* | ERR* | ERR* | ERR* | ERR* | 
 
 \*>72 - Time above 72h is not acceptable.
 
-\*ERR - all `c24` runs (about 18 in total) failed after random number of hours (from 3h to 11h). Possible hardware issues like overheating. Training was relatively slow, possibly >72h.
+\*ERR - all `c24` runs (about 18 in total) failed after random number of hours (from 3h to 11h). Out of memory error, rerun required.
