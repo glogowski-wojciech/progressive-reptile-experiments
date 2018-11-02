@@ -19,10 +19,10 @@ Experiment reproduces original Reptile's results on Prometheus with mrunner and 
 
 Time of execution [h] | o15 | o15t | o55 | o55t | o120 | o120t | o520 | o520t | m15 | m15t | m55 | m55t
 --- | --- | --- | --- |--- |--- |--- | --- | --- | --- | --- | --- | ---
-TensorFlow 1.11 without MKL-DNN, c=2 | 27 | 27 | 26 | 16 | --- | --- | --- | --- | >48* | >48* | >48* | >48*
+TensorFlow 1.11 without MKL-DNN, c=2 | 27 | 27 | 26 | 16 | >72* | >72* | >72* | >72* | >72* | >72* | >72* | >72*
 TensorFlow 1.11 with MKL-DNN, c=2  | --- | --- | --- |--- | --- | --- | --- | --- | --- | --- | --- | ---
 TensorFlow 1.11 with MKL-DNN, c=6  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 TensorFlow 1.11 with MKL-DNN, c=12  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
 TensorFlow 1.11 with MKL-DNN, c=24  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 
-\*>48 - time above 48h is not acceptable
+\*>72 - time above 72h is not acceptable
