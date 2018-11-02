@@ -10,7 +10,7 @@ Prometheus provides 2232 nodes, each with two Xeons E5-2680v3 12C 2,5 GHz. 72 no
 
 # Experiment settings
 
-We test runs on CPU-only nodes using 2 (`intel_tf`) or 6 (`c=6`) or 12 (`c=12`) or 24 cores (`c=24`) of node instead of mrunner's default 2 cores (`c=2`) with MKL-DNN. We also test a 2-core run without MKL-DNN.
+We test runs on CPU-only nodes using 2 (`intel_tf`) or 6 (`c6`) or 12 (`c12`) or 24 cores (`c24`) of node instead of mrunner's default 2 cores with MKL-DNN. We also test a 2-core run without MKL-DNN (no special tag).
 
 # Run details
 Experiment reproduces original Reptile's results on Prometheus with mrunner and Neptune. Time of execution is being tracked by Neptune.
