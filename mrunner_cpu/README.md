@@ -25,4 +25,4 @@ TensorFlow 1.11 with MKL-DNN, c=6  | --- | --- | --- | --- | --- | --- | --- | -
 TensorFlow 1.11 with MKL-DNN, c=12  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- 
 TensorFlow 1.11 with MKL-DNN, c=24  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 
-\*>48h - time above 48h is not acceptable
+\*>48 - time above 48h is not acceptable
