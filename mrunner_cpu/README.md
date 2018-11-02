@@ -16,9 +16,9 @@ Experiment reproduces original Reptile's results on Prometheus with mrunner and 
 
 Time of execution | o15 | o15t | o55 | o55t | o120 | o120t | o520 | o520t | m15 | m15t | m55 | m55t
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |--- | ---
-TensorFlow 1.11 without MKL-DNN, c=2 | --- | --- | --- |--- |--- |--- |--- |--- | >72h* | >72h* | >72h* | >72h*
+TensorFlow 1.11 without MKL-DNN, c=2 | --- | --- | --- |--- |--- |--- |--- |--- | >48h* | >48h* | >48h* | >48h*
 TensorFlow 1.11 with MKL-DNN, c=2  | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |--- | ---
 TensorFlow 1.11 with MKL-DNN, c=12  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 TensorFlow 1.11 with MKL-DNN, c=24  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 
-\*>72h - After 72h jobs on Prometheus are killed
+\*>48h - time above 48h is not acceptable
