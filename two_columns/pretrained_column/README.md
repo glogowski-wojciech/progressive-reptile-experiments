@@ -4,6 +4,8 @@ In this experiment we check how does a 2-columns progressive network with one pr
 
 # Tags:
 
+- `pretraining_col0` (for jobs that pretrain column 0)
+- `pretraining_col1` (for jobs that pretrain column 1)
 - `pret_col0` (for training with pretrained column 0)
 - `pret_col1` (for training with pretrained column 1)
 - `lr=0.0002` (for lr=0.0002 in untrained column)
