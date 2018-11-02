@@ -36,7 +36,7 @@ tag ::= [o|m][1|5][5|20][|t]
 
 [5|20]:
 - 5 ::= 5-way
-- 20 ::= 20-way
+- 20 ::= 20-way (used only for Omniglot)
 
 [|t]:
 - '' ::= non-transductive setting
