@@ -1,7 +1,7 @@
 # On experiments
  
 Tags:
-- (no tag for jobs not using MKL-DNN)
+- `no_mkl` (no tag for jobs not using MKL-DNN)
 - `c2` (for jobs using MKL-DNN and 2 cores)
 - `c6` (for jobs using MKL-DNN and 6 cores)
 - `c12` (for jobs using MKL-DNN and 12 cores)
@@ -11,7 +11,7 @@ Prometheus provides 2232 nodes, each with two Xeons E5-2680v3 12C 2,5 GHz. 72 no
 
 # Experiment settings
 
-We test runs on CPU-only nodes using 2 (`c2`) or 6 (`c6`) or 12 (`c12`) or 24 cores (`c24`) of node instead of mrunner's default 2 cores with MKL-DNN. We also test a 2-core run without MKL-DNN (no special tag).
+We test runs on CPU-only nodes using 2 (`c2`) or 6 (`c6`) or 12 (`c12`) or 24 cores (`c24`) of node instead of mrunner's default 2 cores with MKL-DNN. We also test a 2-core run without MKL-DNN (`no_mkl`).
 
 # Run details
 Experiment reproduces original Reptile's results on Prometheus with mrunner and Neptune. Time of execution is being tracked by Neptune.
@@ -20,10 +20,10 @@ Experiment reproduces original Reptile's results on Prometheus with mrunner and 
 
 Time of execution [h] | o15 | o15t | o55 | o55t | o120 | o120t | o520 | o520t | m15 | m15t | m55 | m55t
 --- | --- | --- | --- |--- |--- |--- | --- | --- | --- | --- | --- | ---
-TensorFlow 1.11 without MKL-DNN, c=2 | 27 | 27 | 26 | 16 | >72* | >72* | >72* | >72* | >72* | >72* | >72* | >72*
-TensorFlow 1.11 with MKL-DNN, c=2  | --- | --- | --- |--- | --- | --- | --- | --- | --- | --- | --- | ---
-TensorFlow 1.11 with MKL-DNN, c=6  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-TensorFlow 1.11 with MKL-DNN, c=12  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-TensorFlow 1.11 with MKL-DNN, c=24  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+`no_mkl` | 27 | 27 | 26 | 16 | >72* | >72* | >72* | >72* | >72* | >72* | >72* | >72*
+`c2`  | --- | --- | --- |--- | --- | --- | --- | --- | --- | --- | --- | ---
+`c6`  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+`c12`  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+`c24`  | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 
 \*>72 - Time above 72h is not acceptable.
