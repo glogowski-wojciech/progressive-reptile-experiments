@@ -30,7 +30,7 @@ ooox | 0.95278
 
 Lateral setting | Test Accuracy in m15, lr=0.001
 --- | ---
-xxxx | ---
+xxxx | 0.4635
 xxxo | 0.46604
 xxox | 0.47918
 xxoo | 0.47052
@@ -41,7 +41,7 @@ xooo | 0.47852
 oxxx | 0.46472
 oxxo | 0.472
 oxox | 0.4689
-oxoo | ---
+oxoo | 0.4697
 ooxx | 0.46596
 ooxo | 0.46152
 ooox | 0.46566
