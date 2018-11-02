@@ -9,5 +9,5 @@ Goal of this experiment is to verify whether two optimizers, one per each column
 
 Test Accuracy for Setting | o15 | o15t | m15 | m15t
 --- | --- | --- | --- | ---
-One gradient | 0.96282 | 0.98272 | --- | ---
-Two gradients | 0.96084 | 0.98326 | --- | ---
+One gradient | 0.96282 | 0.98272 | 0.46744 | 0.48988
+Two gradients | 0.96084 | 0.98326 | 0.46316 | 0.50314

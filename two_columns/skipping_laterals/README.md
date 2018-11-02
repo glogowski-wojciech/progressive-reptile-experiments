@@ -12,21 +12,21 @@ In case of 2-column progressive network:
 
 Lateral setting | Test Accuracy in o15, lr=0.001
 --- | ---
-xxxx | ---
-xxxo | ---
-xxox | ---
-xxoo | ---
-xoxx | ---
-xoxo | ---
-xoox | ---
-xooo | ---
-oxxx | ---
-oxxo | ---
-oxox | ---
-oxoo | ---
-ooxx | ---
-ooxo | ---
-ooox | ---
+xxxx | 0.96204
+xxxo | 0.96208
+xxox | 0.96002
+xxoo | 0.96116
+xoxx | 0.95974
+xoxo | 0.96058
+xoox | 0.95446
+xooo | 0.95536
+oxxx | 0.95902
+oxxo | 0.96232
+oxox | 0.95906
+oxoo | 0.95798
+ooxx | 0.9578
+ooxo | 0.95868
+ooox | 0.95278
 
 Lateral setting | Test Accuracy in m15, lr=0.001
 --- | ---
