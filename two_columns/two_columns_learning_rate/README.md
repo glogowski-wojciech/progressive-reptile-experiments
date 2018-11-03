@@ -1,6 +1,6 @@
 # Two columns learning rate
 
-We use separate learning rates for progressive column 0 and progressive column 1. Goal of this experiment is to find best learning rates for `o15` and `m15` tasks for two-column architecture. Default learning rate from publication used for one column is 0.001.
+We use separate learning rates for progressive column 0 and progressive column 1. Both gradients come from loss from columns 1 (none from column 0). Goal of this experiment is to find best learning rates for `o15` and `m15` tasks for two-column architecture. Default learning rate from publication used for one column is 0.001.
 
 Test Accuracy in o15 | lr1=0.0002 | lr1=0.001 | lr1=0.005
 --- | --- | --- | ---
