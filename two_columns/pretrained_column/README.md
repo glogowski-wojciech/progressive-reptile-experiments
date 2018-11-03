@@ -1,41 +1,34 @@
 # Pretrained column
 
-In this experiment we check how does a 2-columns progressive network with one pretrained column works. The pretrained column weights are from one-column training with original setting from publication. We try both pretraining 1st column and pretraining 2nd column. We also check learning rate of untrained column equal 0.0002, 0.001, 0.005. We test this algorithm on all tasks.
+In this experiment we check how does a 2-columns progressive network with one pretrained column works. The pretrained column weights are from one-column training with original setting from publication. We pretrain column 0. We test in on `o15`, `o120`, `m15`, `m55` tasks. After loading the pretrained column we consider multiple learning rates of both column 0 and column 1.
 
 # Tags:
 
 - `pretraining_col0` (for jobs that pretrain column 0)
 - `pretraining_col1` (for jobs that pretrain column 1)
-- `pret_col0` (for training with pretrained column 0)
-- `pret_col1` (for training with pretrained column 1)
-- `lr=0.0002` (for lr=0.0002 in untrained column)
-- `lr=0.001` (for lr=0.001 in untrained column)
-- `lr=0.005` (for lr=0.005 in untrained column)
-- `lr=0.0001` (for lr=0.0001 in untrained column)
-- `lr=0.0005` (for lr=0.0005 in untrained column)
-- `lr=0.0025` (for lr=0.0025 in untrained column)
+- `pretrained_col0` (for training with pretrained column 0)
 
 
-Test accuracy for `pret_col0` | o15 | o15t | o55 | o55t | m15 | m15t | m55 | m55t
---- | --- | --- | --- | --- | --- | --- | --- | ---
-`lr=0.0002` | --- | --- | --- | --- | --- | --- | --- | ---
-`lr=0.001` | --- | --- | --- | --- | --- | --- | --- | ---
-`lr=0.005` | --- | --- | --- | --- | --- | --- | --- | ---
+Test Accuracy in o15 | lr1=0.0002 | lr1=0.001 | lr1=0.005
+--- | --- | --- | ---
+lr0=0.0002 | --- | --- | ---
+lr0=0.001 | --- | --- | ---
+lr0=0.005 | --- | --- | ---
 
-Test accuracy for `pret_col1` | o15 | o15t | o55 | o55t | m15 | m15t | m55 | m55t
---- | --- | --- | --- | --- | --- | --- | --- | ---
-`lr=0.0002` | --- | --- | --- | --- | --- | --- | --- | ---
-`lr=0.001` | --- | --- | --- | --- | --- | --- | --- | ---
-`lr=0.005` | --- | --- | --- | --- | --- | --- | --- | ---
+Test Accuracy in o120 | lr1=0.0001 | lr1=0.0005 | lr1=0.0025
+--- | --- | --- | ---
+lr0=0.0001 | --- | --- | ---
+lr0=0.0005 | --- | --- | ---
+lr0=0.0025 | --- | --- | ---
 
-Test accuracy for `pret_col0` | o120 | o120t | o520 | o520t
---- | --- | --- | --- | ---
-`lr=0.0001` | --- | --- | --- | ---
-`lr=0.0005` | --- | --- | --- | ---
-`lr=0.0025` | --- | --- | --- | ---
+Test Accuracy in m15 | lr1=0.0002 | lr1=0.001 | lr1=0.005
+--- | --- | --- | ---
+lr0=0.0002 | --- | --- | ---
+lr0=0.001 | --- | --- | ---
+lr0=0.005 | --- | --- | ---
 
-Test accuracy for `pret_col0` | o120 | o120t | o520 | o520t
---- | --- | --- | --- | ---
-`lr=0.0001` | --- | --- | --- | ---
-`lr=0.0005` | --- | --- | --- | ---
-`lr=0.0025` | --- | --- | --- | ---
+Test Accuracy in m55 | lr1=0.0002 | lr1=0.001 | lr1=0.005
+--- | --- | --- | ---
+lr0=0.0002 | --- | --- | ---
+lr0=0.001 | --- | --- | ---
+lr0=0.005 | --- | --- | ---
