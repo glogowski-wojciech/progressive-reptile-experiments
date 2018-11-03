@@ -1,4 +1,4 @@
-# Two columns learning rate
+# Two columns two losses
 
 We use separate learning rates for progressive column 0 and progressive column 1. Gradients come from two losses. Gradient for column 0 comes from column 0's logits' loss. Gradient for column 1 comes from column 1's logits' loss. Goal of this experiment is to verify accuracy of this solution and to find best learning rates for `o15`, `o120`, `m15` and `m55` tasks. Default learning rate from publication used for one column is 0.001 for `o15`, `m15` and `m55` and 0.0005 for `o120`.
 
