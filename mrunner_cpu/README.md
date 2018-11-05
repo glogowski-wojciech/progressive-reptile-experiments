@@ -27,4 +27,5 @@ Time of execution [h] | o15 | o15t | o55 | o55t | o120 | o120t | o520 | o520t | 
 `c24`  | 25 | 29 | --- | --- | >72* | >72* | >72* | >72* | OOM* | OOM* | OOM* | OOM*
 
 \*>72 - Time above 72h is not acceptable.
+
 \* OOM - Out of memory error. Jobs with Intel's TensorFlow seem to have some memory leaks.
