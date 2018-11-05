@@ -4,6 +4,8 @@ We use separate learning rates for progressive column 0 and progressive column 1
 
 # Results
 
+For given task and learning rates, results for column 0 and column 1 correspond to the same 2-column network.
+
 Test Accuracy of column 0 in o15 | lr1=0.0002 | lr1=0.001 | lr1=0.005
 --- | --- | --- | ---
 lr0=0.0002 | 0.85922 | 0.86072 | 0.85128
