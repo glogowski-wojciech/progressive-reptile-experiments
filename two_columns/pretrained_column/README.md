@@ -5,7 +5,6 @@ In this experiment we check how does a 2-columns progressive network with one pr
 # Tags
 
 - `pretraining_col0` (for jobs that pretrain column 0)
-- `pretraining_col1` (for jobs that pretrain column 1)
 - `pretrained_col0` (for training with pretrained column 0)
 
 # Results
@@ -18,9 +17,9 @@ lr0=0.005 | 0.94902 | 0.96538 | 0.92106
 
 Test Accuracy in o120 | lr1=0.0001 | lr1=0.0005 | lr1=0.0025
 --- | --- | --- | ---
-lr0=0.0001 | 0.87929 | --- | ---
-lr0=0.0005 | --- | --- | 0.89101
-lr0=0.0025 | --- | --- | 0.88854
+lr0=0.0001 | 0.87929 | --- | 0.89131
+lr0=0.0005 | --- | 0.86464 | 0.89101
+lr0=0.0025 | 0.874425 | 0.887105 | 0.88854
 
 Test Accuracy in m15 | lr1=0.0002 | lr1=0.001 | lr1=0.005
 --- | --- | --- | ---
