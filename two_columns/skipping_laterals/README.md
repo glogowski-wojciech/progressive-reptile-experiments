@@ -10,7 +10,7 @@ In case of 2-column progressive network:
 - `xoxo` stands for connections from 1st and 3rd layers of first column
 - `ooox` stands for one connection from 4rd layer of first column
 
-Lateral setting | Test Accuracy in o15, lr=0.001
+Lateral setting | Test Accuracy in o15
 --- | ---
 xxxx | 0.96204
 xxxo | 0.96208
@@ -28,7 +28,7 @@ ooxx | 0.9578
 ooxo | 0.95868
 ooox | 0.95278
 
-Lateral setting | Test Accuracy in m15, lr=0.001
+Lateral setting | Test Accuracy in m15
 --- | ---
 xxxx | 0.4635
 xxxo | 0.46604
