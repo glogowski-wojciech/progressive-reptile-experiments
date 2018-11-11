@@ -2,8 +2,8 @@
 
 We use separate meta learning rates for progressive column 0 and progressive column 1. Goal of the experiment is to test whether any column can learn to store more long-term features and to find best meta learning rates. We test many values for initial meta step (ims) and final meta step (fms) for each column.
 
-Each row in the tables represents (ims for progressive column0, fms for progressive columns 0)
-Each column in the tables represents (ims for progressive column1, fms for progressive columns 1)
+Each row in the tables represents (ims for progressive column 0, fms for progressive column 0)
+Each column in the tables represents (ims for progressive column 1, fms for progressive column 1)
 
 # Results
 
@@ -11,15 +11,15 @@ Fast column 1:
 
 Test Accuracy in o15 | (0.1, 0.0) | (0.1, 0.1) | (0.1, 1.0) | (1.0, 0.0) | (1.0, 0.1) | (1.0, 1.0) | (10.0, 0.0) | (10.0, 0.1) | (10.0, 1.0)
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-(0.1, 0.0) | --- | --- | --- | --- | --- | --- | --- | --- | ---
-(1.0, 0.0) | --- | --- | --- | --- | --- | --- | --- | --- | ---
-(10.0, 0.0) | --- | --- | --- | --- | --- | --- | --- | --- | ---
+(0.1, 0.0) | 0.92298 | --- | 0.87174 | --- | 0.9125 | 0.89114 | 0.85592 | 0.85928 | 0.85698
+(1.0, 0.0) | 0.9455 | 0.92448 | 0.86078 | 0.96182 | 0.94604 | 0.85974 | 0.93182 | 0.93558 | ---
+(10.0, 0.0) | 0.9474 | 0.93258 | 0.9188 | 0.96338 | 0.95966 | 0.927 | 0.2 | 0.2 | ---
 
 Test Accuracy in o55 | (0.1, 0.0) | (0.1, 0.1) | (0.1, 1.0) | (1.0, 0.0) | (1.0, 0.1) | (1.0, 1.0) | (10.0, 0.0) | (10.0, 0.1) | (10.0, 1.0)
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
-(0.1, 0.0) | --- | --- | --- | --- | --- | --- | --- | --- | ---
-(1.0, 0.0) | --- | --- | --- | --- | --- | --- | --- | --- | ---
-(10.0, 0.0) | --- | --- | --- | --- | --- | --- | --- | --- | ---
+(0.1, 0.0) | 0.98272 | 0.98608 | 0.97376 | 0.9861 | 0.98472 | 0.97594 | 0.96822 | --- | 0.96474
+(1.0, 0.0) | 0.98674 | 0.98622 | 0.98794 | 0.99162 | 0.99214 | 0.98628 | 0.98434 | 0.98678 | 0.98582
+(10.0, 0.0) | 0.98566 | 0.98802 | 0.98966 | 0.99294 | 0.99352 | 0.99096 | 0.2 | 0.79808 | 0.2
 
 Test Accuracy in o120 | (0.1, 0.0) | (0.1, 0.1) | (0.1, 1.0) | (1.0, 0.0) | (1.0, 0.1) | (1.0, 1.0) | (10.0, 0.0) | (10.0, 0.1) | (10.0, 1.0)
 --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
