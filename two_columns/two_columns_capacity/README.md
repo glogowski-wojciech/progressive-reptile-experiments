@@ -24,6 +24,11 @@ Number of convolutional channels in two-column nets that make number of paramete
 - Omniglot: 36 (113265 parameters)
 - Mini-ImageNet: 18 (35505 parameters)
 
+Number of convolutional channels in two-column nets with `oxxo` lateral map that make number of parameters closest to the original number of parameters:
+
+- Omniglot: 39 (115057 parameters)
+- Mini-ImageNet: 20 (34807 parameters)
+
 # Full logs
 
 Original Omniglot:
@@ -276,4 +281,96 @@ Two-column Mini-ImageNet with 18 convolutional channels instead of 32:
 <tf.Variable 'Col1Vars/dense/kernel:0' shape=(1296, 5) dtype=float32_ref> [1296, 5]
 <tf.Variable 'Col1Vars/dense/bias:0' shape=(5,) dtype=float32_ref> [5]
 num_params:  35505.0
+```
+
+Two-column `oxxo` Omniglot with 39 convolutional channels:
+
+```
+<tf.Variable 'Col0Vars/conv2d/kernel:0' shape=(3, 3, 1, 39) dtype=float32_ref> [3, 3, 1, 39]
+<tf.Variable 'Col0Vars/conv2d/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/conv2d_1/kernel:0' shape=(3, 3, 39, 39) dtype=float32_ref> [3, 3, 39, 39]
+<tf.Variable 'Col0Vars/conv2d_1/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization_1/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization_1/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/conv2d_2/kernel:0' shape=(3, 3, 39, 39) dtype=float32_ref> [3, 3, 39, 39]
+<tf.Variable 'Col0Vars/conv2d_2/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization_2/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization_2/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/conv2d_3/kernel:0' shape=(3, 3, 39, 39) dtype=float32_ref> [3, 3, 39, 39]
+<tf.Variable 'Col0Vars/conv2d_3/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization_3/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col0Vars/batch_normalization_3/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/conv2d/kernel:0' shape=(3, 3, 1, 39) dtype=float32_ref> [3, 3, 1, 39]
+<tf.Variable 'Col1Vars/conv2d/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/conv2d_1/kernel:0' shape=(3, 3, 39, 39) dtype=float32_ref> [3, 3, 39, 39]
+<tf.Variable 'Col1Vars/conv2d_1/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization_1/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization_1/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Net/Col1Vars/C2CAdapt_1/Variable:0' shape=() dtype=float32_ref> []
+<tf.Variable 'Col1Vars/conv2d_2/kernel:0' shape=(1, 1, 39, 39) dtype=float32_ref> [1, 1, 39, 39]
+<tf.Variable 'Col1Vars/conv2d_2/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/conv2d_3/kernel:0' shape=(3, 3, 78, 39) dtype=float32_ref> [3, 3, 78, 39]
+<tf.Variable 'Col1Vars/conv2d_3/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization_2/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization_2/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Net/Col1Vars/C2CAdapt_2/Variable:0' shape=() dtype=float32_ref> []
+<tf.Variable 'Col1Vars/conv2d_4/kernel:0' shape=(1, 1, 39, 39) dtype=float32_ref> [1, 1, 39, 39]
+<tf.Variable 'Col1Vars/conv2d_4/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/conv2d_5/kernel:0' shape=(3, 3, 78, 39) dtype=float32_ref> [3, 3, 78, 39]
+<tf.Variable 'Col1Vars/conv2d_5/bias:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization_3/gamma:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/batch_normalization_3/beta:0' shape=(39,) dtype=float32_ref> [39]
+<tf.Variable 'Col1Vars/dense/kernel:0' shape=(156, 5) dtype=float32_ref> [156, 5]
+<tf.Variable 'Col1Vars/dense/bias:0' shape=(5,) dtype=float32_ref> [5]
+num_params:  115057.0
+```
+
+Two-column `oxxo` Mini-ImageNet with 20 convolutional channels:
+
+```
+<tf.Variable 'Col0Vars/conv2d/kernel:0' shape=(3, 3, 3, 20) dtype=float32_ref> [3, 3, 3, 20]
+<tf.Variable 'Col0Vars/conv2d/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/conv2d_1/kernel:0' shape=(3, 3, 20, 20) dtype=float32_ref> [3, 3, 20, 20]
+<tf.Variable 'Col0Vars/conv2d_1/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization_1/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization_1/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/conv2d_2/kernel:0' shape=(3, 3, 20, 20) dtype=float32_ref> [3, 3, 20, 20]
+<tf.Variable 'Col0Vars/conv2d_2/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization_2/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization_2/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/conv2d_3/kernel:0' shape=(3, 3, 20, 20) dtype=float32_ref> [3, 3, 20, 20]
+<tf.Variable 'Col0Vars/conv2d_3/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization_3/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col0Vars/batch_normalization_3/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/conv2d/kernel:0' shape=(3, 3, 3, 20) dtype=float32_ref> [3, 3, 3, 20]
+<tf.Variable 'Col1Vars/conv2d/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/conv2d_1/kernel:0' shape=(3, 3, 20, 20) dtype=float32_ref> [3, 3, 20, 20]
+<tf.Variable 'Col1Vars/conv2d_1/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization_1/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization_1/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Net/Col1Vars/C2CAdapt_1/Variable:0' shape=() dtype=float32_ref> []
+<tf.Variable 'Col1Vars/conv2d_2/kernel:0' shape=(1, 1, 20, 20) dtype=float32_ref> [1, 1, 20, 20]
+<tf.Variable 'Col1Vars/conv2d_2/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/conv2d_3/kernel:0' shape=(3, 3, 40, 20) dtype=float32_ref> [3, 3, 40, 20]
+<tf.Variable 'Col1Vars/conv2d_3/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization_2/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization_2/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Net/Col1Vars/C2CAdapt_2/Variable:0' shape=() dtype=float32_ref> []
+<tf.Variable 'Col1Vars/conv2d_4/kernel:0' shape=(1, 1, 20, 20) dtype=float32_ref> [1, 1, 20, 20]
+<tf.Variable 'Col1Vars/conv2d_4/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/conv2d_5/kernel:0' shape=(3, 3, 40, 20) dtype=float32_ref> [3, 3, 40, 20]
+<tf.Variable 'Col1Vars/conv2d_5/bias:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization_3/gamma:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/batch_normalization_3/beta:0' shape=(20,) dtype=float32_ref> [20]
+<tf.Variable 'Col1Vars/dense/kernel:0' shape=(720, 5) dtype=float32_ref> [720, 5]
+<tf.Variable 'Col1Vars/dense/bias:0' shape=(5,) dtype=float32_ref> [5]
+num_params:  34807.0
 ```
