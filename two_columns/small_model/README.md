@@ -1,6 +1,6 @@
 # Small model
 
-We train two-column network with learning rates of columns 0 and 1 equal 0.005 and 0.001 respectively. The loss comes from column 1. The size of the network is similar to original size of networks used in Reptile as calculated in two_columns_capacity.
+We train two-column network with learning rates of columns 0 and 1 equal 0.005 and 0.001 respectively and with lateral scheme oxxo. The loss comes from column 1. The size of the network is similar to original size of networks used in Reptile as calculated in two_columns_capacity.
 
 Mode | Accuracy | Accuracy of one-column network from Reptile
 --- | --- | ---
